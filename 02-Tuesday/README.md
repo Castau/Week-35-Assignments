@@ -4,12 +4,13 @@
 Login på router/search google - 2.106.16.17
 
 #### What is your private IP address right now (do this both at home and in school), and who/what gave you that address?
-Ipconfig i cmd: 192.168.1.37 - routeren har givet mig den (hjemme)
+Ipconfig i cmd: 192.168.1.37 - routeren har giv  et mig den (hjemme)  
 Ipcinfig i cmd: 192.168.56.1 - skole
-What’s special about these address ranges?
-10.0.0.0 – 10.255.255.255
-172.16.0.0 – 172.31.255.255 
-192.168.0.0 – 192.168.255.255
+
+#### What’s special about these address ranges?
+10.0.0.0 – 10.255.255.255  
+172.16.0.0 – 172.31.255.255   
+192.168.0.0 – 192.168.255.255  
 Lokal kommunikation på et lokalt netværk (Intranet og mere komplicerede interne netværk).
 
 #### What’s special about this ip-address: 127.0.0.1?
