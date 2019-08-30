@@ -57,6 +57,21 @@ keep-alive: clienten vil gerne have at connectionen forbliver åben.
 ##### How did the browser know where to look
 Redirect-servletten laver et redirect til r.html for alle GET-requests.
 
+#### 3a) Redirecting to HTTPs instead of HTTP
+Ved forsøg på tilgang af http://studypoints.info får jeg en statuskode 301 (Moved Permanently) og i responset kan jeg se at jeg kommer ind på https://studypoints.info 
+
+#### 4a) Status Codes (5xx)
+Statuskode 500 bliver sendt tilbage (Internal Server Error). Fejlbeskeden fra tomcat er “java.lang.ArithmeticException: / by zero” på grund af division med 0. 
+
+#### 4b) Status Codes (4xx)
+Statuskode 404 bliver sendt tilbage (Not found).
+
+#### 4c) Status Codes - Ranges
+1xx (Informational): The request was received, continuing process
+2xx (Successful): The request was successfully received, understood and accepted
+3xx (Redirection): Further action needs to be taken in order to complete the request
+4xx (Client Error): The request contains bad syntax or cannot be fulfilled
+5xx (Server Error): The server failed to fulfill an apparently valid request
 
 
 
