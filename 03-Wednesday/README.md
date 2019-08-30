@@ -5,14 +5,16 @@
 
 Headers er opdelt i General, Response og Request headers. 
 
-General Headers:
+*General Headers:
+
 * Request URL: URL requested af clienten
 * Request Method: Om det er GET, POST, PUT, DELETE der ønskes
 * Status Code: Kode indeholdt i response som svar på requesten, 200 er f.eks. OK
 * Remote Address: IP-adresse og port på host.
 * Referrer policy: information om foregående web side, der er forskellige politikker som kan følges, no-referrer-when-downgrade er standard
 
-Request Headers
+*Request Headers  
+
 Indeholder headers med information såsom type, browser information, information om OS, hvilken siden der er requested, hvilke output der accepteres, hvilke sprog der accepteres osv. 
 
 * Accept: hvilke fil-typer der accepteres i responset
@@ -25,10 +27,10 @@ Indeholder headers med information såsom type, browser information, information
 * Upgrade-Insecure-Requests: Upgradering fra HTTP til HTTPS hvis det er tilgængeligt.
 * User-Agent: Information om clientens browser, OS med mere
 
-Response Headers:
+*Response Headers  
+
 Efter modtagelse af en request vil web-serveren sende en Response Header tilbage til clienten. Indeholder headers med information om type, dato, størrelse af filen, samt information om serveren. 
 
-Response Headers
 * HTTP/1.1 304: Hvilken version af HTTP der bliver brugt i responset samt statuskoden
 * ETag: Bruges i forbindelse med tjek for caching
 * Date: Dato og tidspunkt for responset
