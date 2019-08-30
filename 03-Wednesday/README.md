@@ -79,10 +79,12 @@ Statuskode 404 bliver sendt tilbage (Not found).
 5xx (Server Error): The server failed to fulfill an apparently valid request  
 
 #### 5) Get HTTP Request Headers on the Server
-Når der benyttes GET sendes parametrene direkte i url’en, når der benytes POST sendes de i requestens body. 
+* Resultat:
 ![ ](https://i.imgur.com/adeSv1F.png)
 
 #### 6) Get/Post-parameters
+
+Når der benyttes GET sendes parametrene direkte i url’en, når der benytes POST sendes de i requestens body.  
 
 * GET  
 ![GET](https://i.imgur.com/nGJ767D.png)
