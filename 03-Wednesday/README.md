@@ -1,7 +1,7 @@
 ## Wednesday Assignment
 
 #### 1) Monitoring HTTP Headers 1
-#### Observe and explain each of the values monitored (use view source to see the plain messages).
+##### Observe and explain each of the values monitored (use view source to see the plain messages).
 
 Headers er opdelt i General, Response og Request headers. 
 
@@ -30,10 +30,34 @@ Efter modtagelse af en request vil web-serveren sende en Response Header tilbage
 
 * HTTP/1.1 304: Hvilken version af HTTP der bliver brugt i responset samt statuskoden
 * ETag: Bruges i forbindelse med tjek for caching
-* Date: Dato og tidspunkt for responset
-   
+* Date: Dato og tidspunkt for responset  
+     
   
 Første gang fk jeg statuskode 200 på index1.html. Efter ctrl+f5 fik jeg statuskode 200 på favicon.ico og statuskode 304 på index1.html. Dvs. index1.html er hentet fra cachen.  
 304 - Resource has not been modified since the version specified by the request headers No need to retransmit the resource.  
 200 - OK. Standard response for successful HTTP requests.  
+  
+  
+#### 2) Monitoring HTTP Headers 2
+##### Add an image to the page, add an external style sheet to the page and reload the page again, observe the request(s) being made, and explain the purpose of the connection header.
+
+##### Connection-header kan være sat til enten:
+Connection: close
+Connection: keep-alive  
+  
+Connection-headeren styrer om en netværks-connection forbliver åben eller bliver lukket efter den nuværende transaktion. 
+close: enten client eller server vil gerne lukke connectionen.   
+keep-alive: clienten vil gerne have at connectionen forbliver åben. 
+
+#### 3) Monitoring HTTP Headers 3  (Response-codes 3xx)
+##### Explain the two requests:
+302 - Found. Fortæller clienten at der skal kigges på en anden url
+200 - OK. Standard svar for successfulde HTTP requests.
+
+##### How did the browser know where to look
+Redirect-servletten laver et redirect til r.html for alle GET-requests.
+
+
+
+
 
