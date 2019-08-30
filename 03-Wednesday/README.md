@@ -31,8 +31,8 @@ Efter modtagelse af en request vil web-serveren sende en Response Header tilbage
 * HTTP/1.1 304: Hvilken version af HTTP der bliver brugt i responset samt statuskoden
 * ETag: Bruges i forbindelse med tjek for caching
 * Date: Dato og tidspunkt for responset
-
-
+   
+  
 Første gang fk jeg statuskode 200 på index1.html. Efter ctrl+f5 fik jeg statuskode 200 på favicon.ico og statuskode 304 på index1.html. Dvs. index1.html er hentet fra cachen.  
 304 - Resource has not been modified since the version specified by the request headers No need to retransmit the resource.  
 200 - OK. Standard response for successful HTTP requests.  
