@@ -83,11 +83,10 @@ Når der benyttes GET sendes parametrene direkte i url’en, når der benytes PO
 ![ ](https://i.imgur.com/adeSv1F.png)
 
 #### 6) Get/Post-parameters
-GET
-![ ](https://i.imgur.com/nGJ767D.png)
 
-POST
-![ ](https://i.imgur.com/uUxwdCv.png)
+![GET](https://i.imgur.com/nGJ767D.png)
+
+![POST](https://i.imgur.com/uUxwdCv.png)
 ![ ](https://i.imgur.com/LP2F1S7.png)
 
 
