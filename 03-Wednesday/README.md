@@ -80,8 +80,8 @@ Statuskode 404 bliver sendt tilbage (Not found).
 
 #### 5) Get HTTP Request Headers on the Server
 
-![Imgur Image](https://i.imgur.com/adeSv1F.png)
-![GitHub Logo](imgur.com/adeSv1F)
+![ ](https://i.imgur.com/adeSv1F.png)
+
 
 
 
