@@ -23,7 +23,7 @@ Indeholder headers med information såsom type, browser information, information
 * If-None-Match: specificering af entity-tag serveren udstedte med ressourcen sidste gang den blev modtaget
 * If-Modified-Since: tidspunkt for hvornår browseren sidste gang modtog request-ressourcen
 * Upgrade-Insecure-Requests: Upgradering fra HTTP til HTTPS hvis det er tilgængeligt.
-* User-Agent: Information om clientens browser, OS med mere
+* User-Agent: Information om clientens browser, OS med mere  
 
 ##### Response Headers  
 Efter modtagelse af en request vil web-serveren sende en Response Header tilbage til clienten. Indeholder headers med information om type, dato, størrelse af filen, samt information om serveren. 
@@ -52,26 +52,31 @@ keep-alive: clienten vil gerne have at connectionen forbliver åben.
 #### 3) Monitoring HTTP Headers 3  (Response-codes 3xx)
 ##### Explain the two requests:
 302 - Found. Fortæller clienten at der skal kigges på en anden url
-200 - OK. Standard svar for successfulde HTTP requests.
+200 - OK. Standard svar for successfulde HTTP requests.  
+
 
 ##### How did the browser know where to look
-Redirect-servletten laver et redirect til r.html for alle GET-requests.
+Redirect-servletten laver et redirect til r.html for alle GET-requests.  
+
 
 #### 3a) Redirecting to HTTPs instead of HTTP
-Ved forsøg på tilgang af http://studypoints.info får jeg en statuskode 301 (Moved Permanently) og i responset kan jeg se at jeg kommer ind på https://studypoints.info 
-
+Ved forsøg på tilgang af http://studypoints.info får jeg en statuskode 301 (Moved Permanently) og i responset kan jeg se at jeg kommer ind på https://studypoints.info   
+  
+  
 #### 4a) Status Codes (5xx)
-Statuskode 500 bliver sendt tilbage (Internal Server Error). Fejlbeskeden fra tomcat er “java.lang.ArithmeticException: / by zero” på grund af division med 0. 
-
+Statuskode 500 bliver sendt tilbage (Internal Server Error). Fejlbeskeden fra tomcat er “java.lang.ArithmeticException: / by zero” på grund af division med 0.   
+  
+  
 #### 4b) Status Codes (4xx)
-Statuskode 404 bliver sendt tilbage (Not found).
-
+Statuskode 404 bliver sendt tilbage (Not found).  
+  
+  
 #### 4c) Status Codes - Ranges
-1xx (Informational): The request was received, continuing process
-2xx (Successful): The request was successfully received, understood and accepted
-3xx (Redirection): Further action needs to be taken in order to complete the request
-4xx (Client Error): The request contains bad syntax or cannot be fulfilled
-5xx (Server Error): The server failed to fulfill an apparently valid request
+1xx (Informational): The request was received, continuing process  
+2xx (Successful): The request was successfully received, understood and accepted  
+3xx (Redirection): Further action needs to be taken in order to complete the request  
+4xx (Client Error): The request contains bad syntax or cannot be fulfilled  
+5xx (Server Error): The server failed to fulfill an apparently valid request  
 
 
 
