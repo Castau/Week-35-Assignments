@@ -78,6 +78,8 @@ Statuskode 404 bliver sendt tilbage (Not found).
 4xx (Client Error): The request contains bad syntax or cannot be fulfilled  
 5xx (Server Error): The server failed to fulfill an apparently valid request  
 
+#### 5) Get HTTP Request Headers on the Server
 
+[Imgur](https://i.imgur.com/adeSv1F.png)
 
 
