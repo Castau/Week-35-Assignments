@@ -93,6 +93,37 @@ Når der benyttes GET sendes parametrene direkte i url’en, når der benytes PO
 ![POST](https://i.imgur.com/uUxwdCv.png)
 ![ ](https://i.imgur.com/LP2F1S7.png)
 
+#### 7) Sessions (Session Cookies) 
+Når jeg indtaster mit navn og trykker submit, er der en cookie request header 
+* Cookie: JSESSIONID=6B63F3567FD16762587352294BB79F20  
+![ ](https://i.imgur.com/bCB5pui.png)  
+
+
+Lukning af vinduet og reloading på en ny fane ændrer ikke på cookien. Hvis jeg fjerner requestparametrene så det bare er /SessionDemo jeg loader, så er cookien også stadig den samme.  
+
+![ ](https://i.imgur.com/dXfiQSS.png)  
+
+
+En cookie er data der oprettes af serveren og gemmes hos clienten, via browseren, som serveren bruger til at indsamle data fra eller genkende clienten i efterfølgende requests.  
+En session-cookie eksisterer kun i midlertidig hukommelse mens clienten bruger websiden. Normalt slettes session-cookies når browseren lukkes. Session-cookies har ikke en udløbsdato, hvilket er måden hvorpå browseren genkender at det er en session-cookie. 
+
+##### Cookie-attributer:
+Name: Navnet på cookien
+Value: Værdien
+Domain: Den host der har tilladelse til at modtage cookien
+Path: Den URL del der skal eksistere for at kunne sende cookie-headeren 
+Expires / Max-Age: Cookiens udløbsdato eller alder. Session-cookies har altid værdien Session
+Size: Størrelsen angivet i bytes
+HTTP: Hvis angivet til true må cookien kun sendes over HTTP og JavaScript-modifikationer er ikke tilladt.
+Secure: Hvis angivet til true kan cookien sendes over en sikker HTTPS connection
+SameSite: Hvis strict må requests kun sendes fra samme origin som target domain, kan være strict eller lax
+
+
+#### 8) Persistent Cookies
+Ligesom i opgaven ovenfor slipper jeg ikke af med cookien ved at lukke browseren, men det er ikke en Session-cookie. Forskellen her er at cookien ikke er lavet via session-objektet (request.getSession()), men via et Cookie-objekt i javakoden som en persistent cookie.  
+Persistent cookies udløber ikke når browseren lukkes, men efter en specifik rum tid. I dette tilfælde er det et år. I al den tid gemmes cookien hos clieten og bliver sendt med når clienten laver en request til serveren. I dette tilfælde er der gemt information om username i cookien.
+
+![ ](https://i.imgur.com/I6nwXao.png)  
 
 
 
